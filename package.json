@@ -2,14 +2,15 @@
   "name": "app",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun --hot src/index.ts",
+    "dev:watch": "bun --watch src/index.ts"
   },
   "dependencies": {
+    "@elysiajs/swagger": "^1.2.0",
     "elysia": "latest"
   },
   "devDependencies": {
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.ts"
 }
